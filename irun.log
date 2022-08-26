@@ -1,0 +1,1105 @@
+irun: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	irun	15.20-s039: Started on Aug 26, 2022 at 16:34:52 CST
+irun
+	/home/ic_contest/E64062076/CPU/./sim/top_tb.sv
+	-sdf_file /home/ic_contest/E64062076/CPU/./syn/top_syn.sdf
+	+incdir+/home/ic_contest/E64062076/CPU/./syn+/home/ic_contest/E64062076/CPU/./include+/home/ic_contest/E64062076/CPU/./sim
+	+define+SYN+prog0+FSDB_ALL
+	-define CYCLE=10.0
+	-define MAX=100000
+	+access+r
+	+prog_path=/home/ic_contest/E64062076/CPU/./sim/prog0
+
+   User defined plus("+") options:
+	+prog_path=/home/ic_contest/E64062076/CPU/./sim/prog0
+
+file: /home/ic_contest/E64062076/CPU/./sim/top_tb.sv
+`define CYCLE 10.0 // Cycle time
+                                |
+ncvlog: *W,MACNDF (/home/ic_contest/E64062076/CPU/./sim/top_tb.sv,2|32): The text macro 'CYCLE' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+`define MAX 100000 // Max cycle number
+                                      |
+ncvlog: *W,MACNDF (/home/ic_contest/E64062076/CPU/./sim/top_tb.sv,3|38): The text macro 'MAX' has also been defined on the command line using the -DEFINE command line option.  The compiler will ignore the definition found in the Verilog source code.
+    $value$plusargs("prog_path=%s", prog_path);
+                  |
+ncvlog: *W,NOSYST (/home/ic_contest/E64062076/CPU/./sim/top_tb.sv,39|18): System function '$value$plusargs' invoked as a task. Return value will be ignored.
+      $fscanf(gf, "%h\n", GOLDEN[num]);
+            |
+ncvlog: *W,NOSYST (/home/ic_contest/E64062076/CPU/./sim/top_tb.sv,54|12): System function '$fscanf' invoked as a task. Return value will be ignored.
+ncvlog: *W,SPDUSD: Include directory /home/ic_contest/E64062076/CPU/./include given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 3
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+  DFFRBT \pc_out_reg[11]  ( .D(n45), .CK(clk), .RB(n162), .Q(pc_out[11]) );
+                        |
+ncelab: *W,CUVWSP (../syn/top_syn.v,248|24): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5289): QB
+
+  DFFRBT \pc_out_reg[16]  ( .D(n50), .CK(clk), .RB(n162), .Q(pc_out[16]) );
+                        |
+ncelab: *W,CUVWSP (../syn/top_syn.v,249|24): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5289): QB
+
+  DFFRBT \pc_out_reg[19]  ( .D(n53), .CK(clk), .RB(n162), .Q(pc_out[19]) );
+                        |
+ncelab: *W,CUVWSP (../syn/top_syn.v,254|24): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5289): QB
+
+  DFFRBT \pc_out_reg[30]  ( .D(n64), .CK(clk), .RB(n162), .Q(pc_out[30]) );
+                        |
+ncelab: *W,CUVWSP (../syn/top_syn.v,256|24): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5289): QB
+
+  DFFRBP \pc_out_reg[17]  ( .D(n51), .CK(clk), .RB(n162), .Q(pc_out[17]) );
+                        |
+ncelab: *W,CUVWSP (../syn/top_syn.v,257|24): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5193): QB
+
+  DFFRBN \pc_out_reg[6]  ( .D(n40), .CK(clk), .RB(n162), .Q(pc_out[6]) );
+                       |
+ncelab: *W,CUVWSP (../syn/top_syn.v,259|23): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5144): QB
+
+  DFFRBN \pc_out_reg[8]  ( .D(n42), .CK(clk), .RB(n162), .Q(pc_out[8]) );
+                       |
+ncelab: *W,CUVWSP (../syn/top_syn.v,260|23): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5144): QB
+
+  DFFRBP \pc_out_reg[22]  ( .D(n56), .CK(clk), .RB(n162), .Q(pc_out[22]) );
+                        |
+ncelab: *W,CUVWSP (../syn/top_syn.v,263|24): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5193): QB
+
+  DFFRBT \pc_out_reg[20]  ( .D(n54), .CK(clk), .RB(n162), .Q(pc_out[20]) );
+                        |
+ncelab: *W,CUVWSP (../syn/top_syn.v,264|24): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5289): QB
+
+  DFFSBN \instr_stall_reg[4]  ( .D(instr[4]), .CK(clk), .SB(n41), .Q(
+                            |
+ncelab: *W,CUVWSP (../syn/top_syn.v,590|28): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5439): QB
+
+  DFFSBN \instr_stall_reg[1]  ( .D(instr[1]), .CK(clk), .SB(n41), .Q(
+                            |
+ncelab: *W,CUVWSP (../syn/top_syn.v,592|28): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5439): QB
+
+  DFFSBN \instr_stall_reg[0]  ( .D(instr[0]), .CK(clk), .SB(n41), .Q(
+                            |
+ncelab: *W,CUVWSP (../syn/top_syn.v,594|28): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5439): QB
+
+  DFFSBN \EX_Mem_web_reg[3]  ( .D(n96), .CK(clk), .SB(n185), .Q(EX_Mem_web[3])
+                           |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9081|27): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5439): QB
+
+  DFFSBN \EX_Mem_web_reg[2]  ( .D(n95), .CK(clk), .SB(n185), .Q(EX_Mem_web[2])
+                           |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9083|27): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5439): QB
+
+  DFFSBN \EX_Mem_web_reg[1]  ( .D(n94), .CK(clk), .SB(n185), .Q(EX_Mem_web[1])
+                           |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9085|27): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5439): QB
+
+  DFFSBN \EX_Mem_web_reg[0]  ( .D(n93), .CK(clk), .SB(n185), .Q(EX_Mem_web[0])
+                           |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9087|27): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5439): QB
+
+  DFFRBS \EX_Jump_reg[1]  ( .D(n58), .CK(clk), .RB(n200), .Q(EX_Jump[1]) );
+                        |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9237|24): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_Jump_reg[0]  ( .D(n57), .CK(clk), .RB(n200), .Q(EX_Jump[0]) );
+                        |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9238|24): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS EX_branch_s_reg ( .D(n59), .CK(clk), .RB(n200), .Q(EX_branch_s) );
+                       |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9239|23): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \imm_reg[4]  ( .D(n64), .CK(clk), .RB(n200), .Q(imm[4]) );
+                    |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9240|20): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \imm_reg[3]  ( .D(n63), .CK(clk), .RB(n200), .Q(imm[3]) );
+                    |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9241|20): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \imm_reg[2]  ( .D(n62), .CK(clk), .RB(n200), .Q(imm[2]) );
+                    |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9242|20): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \ALUOP_reg[9]  ( .D(n148), .CK(clk), .RB(n200), .Q(ALUOP[9]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9243|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \ALUOP_reg[8]  ( .D(n147), .CK(clk), .RB(n200), .Q(ALUOP[8]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9244|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \ALUOP_reg[7]  ( .D(n146), .CK(clk), .RB(n200), .Q(ALUOP[7]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9245|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \ALUOP_reg[4]  ( .D(n143), .CK(clk), .RB(n200), .Q(ALUOP[4]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9246|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \ALUOP_reg[3]  ( .D(n142), .CK(clk), .RB(n200), .Q(ALUOP[3]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9247|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \ALUOP_reg[2]  ( .D(n141), .CK(clk), .RB(n200), .Q(ALUOP[2]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9248|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[3]  ( .D(n108), .CK(clk), .RB(n200), .Q(EX_pc[3]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9249|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS EX_RDSrc_reg ( .D(n99), .CK(clk), .RB(n200), .Q(EX_RDSrc) );
+                    |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9250|20): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[1]  ( .D(n106), .CK(clk), .RB(n200), .Q(EX_pc[1]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9251|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS EX_Mem_byte_reg ( .D(n92), .CK(clk), .RB(n200), .Q(EX_Mem_byte) );
+                       |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9252|23): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS PCtoRegSrc_reg ( .D(n98), .CK(clk), .RB(n200), .Q(PCtoRegSrc) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9253|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[29]  ( .D(n134), .CK(clk), .RB(n200), .Q(EX_pc[29]) );
+                       |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9254|23): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[0]  ( .D(n105), .CK(clk), .RB(n200), .Q(EX_pc[0]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9255|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[17]  ( .D(n122), .CK(clk), .RB(n200), .Q(EX_pc[17]) );
+                       |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9256|23): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[15]  ( .D(n120), .CK(clk), .RB(n200), .Q(EX_pc[15]) );
+                       |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9257|23): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[13]  ( .D(n118), .CK(clk), .RB(n200), .Q(EX_pc[13]) );
+                       |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9258|23): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[11]  ( .D(n116), .CK(clk), .RB(n200), .Q(EX_pc[11]) );
+                       |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9259|23): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[9]  ( .D(n114), .CK(clk), .RB(n200), .Q(EX_pc[9]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9260|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[7]  ( .D(n112), .CK(clk), .RB(n200), .Q(EX_pc[7]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9261|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[5]  ( .D(n110), .CK(clk), .RB(n200), .Q(EX_pc[5]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9262|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[2]  ( .D(n107), .CK(clk), .RB(n200), .Q(EX_pc[2]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9263|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[16]  ( .D(n121), .CK(clk), .RB(n200), .Q(EX_pc[16]) );
+                       |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9264|23): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[14]  ( .D(n119), .CK(clk), .RB(n200), .Q(EX_pc[14]) );
+                       |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9265|23): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[12]  ( .D(n117), .CK(clk), .RB(n200), .Q(EX_pc[12]) );
+                       |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9266|23): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[10]  ( .D(n115), .CK(clk), .RB(n200), .Q(EX_pc[10]) );
+                       |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9267|23): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[8]  ( .D(n113), .CK(clk), .RB(n200), .Q(EX_pc[8]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9268|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[6]  ( .D(n111), .CK(clk), .RB(n200), .Q(EX_pc[6]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9269|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_pc_reg[4]  ( .D(n109), .CK(clk), .RB(n200), .Q(EX_pc[4]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9270|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rd_addr_reg[1]  ( .D(n101), .CK(clk), .RB(n200), .Q(EX_rd_addr[1]) );
+                           |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9271|27): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rd_addr_reg[4]  ( .D(n104), .CK(clk), .RB(n200), .Q(EX_rd_addr[4]) );
+                           |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9272|27): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rd_addr_reg[3]  ( .D(n103), .CK(clk), .RB(n200), .Q(EX_rd_addr[3]) );
+                           |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9273|27): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rd_addr_reg[2]  ( .D(n102), .CK(clk), .RB(n200), .Q(EX_rd_addr[2]) );
+                           |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9274|27): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rd_addr_reg[0]  ( .D(n100), .CK(clk), .RB(n200), .Q(EX_rd_addr[0]) );
+                           |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9275|27): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rs2_addr_reg[4]  ( .D(n153), .CK(clk), .RB(n200), .Q(
+                            |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9276|28): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rs1_addr_reg[1]  ( .D(n53), .CK(clk), .RB(n200), .Q(
+                            |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9278|28): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rs1_addr_reg[0]  ( .D(n52), .CK(clk), .RB(n200), .Q(
+                            |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9280|28): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rs1_addr_reg[4]  ( .D(n56), .CK(clk), .RB(n200), .Q(
+                            |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9282|28): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \ALUOP_reg[5]  ( .D(n144), .CK(clk), .RB(n200), .Q(ALUOP[5]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9284|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \ALUOP_reg[0]  ( .D(n139), .CK(clk), .RB(n200), .Q(ALUOP[0]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9285|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \ALUOP_reg[6]  ( .D(n145), .CK(clk), .RB(n200), .Q(ALUOP[6]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9286|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \ALUOP_reg[1]  ( .D(n140), .CK(clk), .RB(n200), .Q(ALUOP[1]) );
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9287|22): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rs1_addr_reg[2]  ( .D(n54), .CK(clk), .RB(n200), .Q(
+                            |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9288|28): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rs2_addr_reg[3]  ( .D(n152), .CK(clk), .RB(n200), .Q(
+                            |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9290|28): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rs1_addr_reg[3]  ( .D(n55), .CK(clk), .RB(n200), .Q(
+                            |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9292|28): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rs2_addr_reg[2]  ( .D(n151), .CK(clk), .RB(n200), .Q(
+                            |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9294|28): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \imm_reg[6]  ( .D(n66), .CK(clk), .RB(n200), .Q(imm[6]) );
+                    |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9296|20): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \imm_reg[11]  ( .D(n71), .CK(clk), .RB(n200), .Q(imm[11]) );
+                     |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9297|21): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \imm_reg[9]  ( .D(n69), .CK(clk), .RB(n200), .Q(imm[9]) );
+                    |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9298|20): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \imm_reg[7]  ( .D(n67), .CK(clk), .RB(n200), .Q(imm[7]) );
+                    |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9299|20): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \imm_reg[5]  ( .D(n65), .CK(clk), .RB(n200), .Q(imm[5]) );
+                    |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9300|20): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \imm_reg[10]  ( .D(n70), .CK(clk), .RB(n200), .Q(imm[10]) );
+                     |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9301|21): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \imm_reg[8]  ( .D(n68), .CK(clk), .RB(n200), .Q(imm[8]) );
+                    |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9302|20): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rs2_addr_reg[1]  ( .D(n150), .CK(clk), .RB(n200), .Q(
+                            |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9303|28): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rs2_addr_reg[0]  ( .D(n149), .CK(clk), .RB(n200), .Q(
+                            |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9305|28): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBS \EX_rs2_data_reg[8]  ( .D(N160), .CK(clk), .RB(n200), .Q(
+                            |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9307|28): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5242): QB
+
+  DFFRBT ALUSrc_reg ( .D(n97), .CK(clk), .RB(n200), .Q(ALUSrc) );
+                  |
+ncelab: *W,CUVWSP (../syn/top_syn.v,9309|18): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5289): QB
+
+  ALU_Unit_DW01_cmp2_1 r389 ( .A({\U2/U1/Z_31 , \U2/U1/Z_30 , \U2/U1/Z_29 , 
+                          |
+ncelab: *W,CUVWSP (../syn/top_syn.v,11393|26): 1 output port was not connected:
+ncelab: (../syn/top_syn.v,10164): GE_GT
+
+  ALU_Unit_DW01_sub_1 sub_20 ( .A({n315, n256, n34, n67, n68, n252, n9, n250, 
+                           |
+ncelab: *W,CUVWSP (../syn/top_syn.v,11407|27): 1 output port was not connected:
+ncelab: (../syn/top_syn.v,10352): CO
+
+  ALU_Unit_DW01_add_1 add_19 ( .A({n315, n19, n35, n254, n68, n252, n31, n250, 
+                           |
+ncelab: *W,CUVWSP (../syn/top_syn.v,11414|27): 1 output port was not connected:
+ncelab: (../syn/top_syn.v,10735): CO
+
+  ALU_Unit_DW01_cmp6_1 r390 ( .A({n315, n256, n255, n254, n253, n252, n251, 
+                          |
+ncelab: *W,CUVWSP (../syn/top_syn.v,11423|26): 2 output ports were not connected:
+ncelab: (../syn/top_syn.v,11076): GT
+ncelab: (../syn/top_syn.v,11076): LE
+
+  DFFSBN \MEM_DMem_web_reg[3]  ( .D(n16), .CK(clk), .SB(n158), .Q(
+                             |
+ncelab: *W,CUVWSP (../syn/top_syn.v,12659|29): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5439): QB
+
+  DFFSBN \MEM_DMem_web_reg[2]  ( .D(n15), .CK(clk), .SB(n158), .Q(
+                             |
+ncelab: *W,CUVWSP (../syn/top_syn.v,12661|29): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5439): QB
+
+  DFFSBN \MEM_DMem_web_reg[1]  ( .D(n14), .CK(clk), .SB(n158), .Q(
+                             |
+ncelab: *W,CUVWSP (../syn/top_syn.v,12663|29): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5439): QB
+
+  DFFSBN \MEM_DMem_web_reg[0]  ( .D(n13), .CK(clk), .SB(n158), .Q(
+                             |
+ncelab: *W,CUVWSP (../syn/top_syn.v,12665|29): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5439): QB
+
+  DFFSBN stall_output_reg ( .D(N4), .CK(clk), .SB(n2), .Q(stall_output) );
+                        |
+ncelab: *W,CUVWSP (../syn/top_syn.v,13110|24): 1 output port was not connected:
+ncelab: (/usr/cad/designkit/CBDK018_UMC_Faraday_v1.1/orig_lib/fsa0m_a/2009Q2v2.0/GENERIC_CORE/FrontEnd/verilog/fsa0m_a_generic_core_21.lib,5439): QB
+
+  CPU_DW01_add_1 add_67 ( .A(EX_pc), .B({n11, n11, n11, n11, n11, n11, n11, 
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,14033|22): 1 output port was not connected:
+ncelab: (../syn/top_syn.v,13441): CO
+
+  CPU_DW01_add_2 add_66 ( .A({pc_out, IM_Address[13:2], n172, n173, pc_out_1, 
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,14037|22): 1 output port was not connected:
+ncelab: (../syn/top_syn.v,13514): CO
+
+  CPU_DW01_add_3 add_68 ( .A({EX_pc[31:4], n118, EX_pc[2:0]}), .B(imm), .CI(
+                      |
+ncelab: *W,CUVWSP (../syn/top_syn.v,14041|22): 1 output port was not connected:
+ncelab: (../syn/top_syn.v,13587): CO
+
+	Top level design units:
+		AN2B1P
+		AN2P
+		AN3B1
+		AN3B1P
+		AN3B1T
+		AN3B2T
+		AN3P
+		AN3S
+		AN4
+		AN4B1P
+		AN4B1T
+		AN4P
+		AN4T
+		ANTENNA
+		AO112
+		AO112P
+		AO112S
+		AO112T
+		AO12P
+		AO13P
+		AO13T
+		AO222T
+		AOI112HP
+		AOI112HT
+		AOI13H
+		AOI13HP
+		AOI13HT
+		AOI222H
+		BHD1
+		BUFB1
+		BUFB2
+		BUFB3
+		BUFT1
+		BUFT2
+		BUFT3
+		BUFT4
+		CMPE4
+		CMPE4S
+		DBFRBN
+		DBFRSBN
+		DBHRBN
+		DBHRBS
+		DBZRBN
+		DBZRSBN
+		DELB
+		DELC
+		DFCLRBN
+		DFCRBN
+		DFFN
+		DFFP
+		DFFRSBN
+		DFFS
+		DFTRBN
+		DFTRBS
+		DFZCLRBN
+		DFZCRBN
+		DFZN
+		DFZP
+		DFZRBN
+		DFZRBP
+		DFZRBS
+		DFZRBT
+		DFZRSBN
+		DFZS
+		DFZSBN
+		DFZTRBN
+		DFZTRBS
+		DLHN
+		DLHP
+		DLHRBN
+		DLHRBP
+		DLHRBS
+		DLHS
+		FA1P
+		FA1T
+		FA2
+		FA2P
+		FA2S
+		FA3
+		FA3P
+		FA3S
+		FACS1
+		FACS1P
+		FACS1S
+		FACS2
+		FACS2P
+		FACS2S
+		GCKETF
+		GCKETN
+		GCKETP
+		GCKETT
+		HA1
+		HA1P
+		HA1S
+		HA1T
+		HA2
+		HA2P
+		HA2T
+		HA3
+		HA3P
+		HA3T
+		INVT1
+		INVT2
+		INVT4
+		JKFN
+		JKFRBN
+		JKFRBP
+		JKZN
+		JKZRBN
+		JKZRBP
+		MAO222
+		MAO222P
+		MAO222S
+		MAO222T
+		MAOI1HP
+		MULBE
+		MULBEP
+		MULBET
+		MULPA
+		MULPAP
+		MULPAT
+		MUX2F
+		MUX2P
+		MUX3P
+		MUX3T
+		MUX4
+		MUX4P
+		MUX4S
+		MUX4T
+		MUXB2P
+		MUXB2T
+		MUXB4
+		MUXB4P
+		MUXB4S
+		MUXB4T
+		MXL3
+		MXL3P
+		MXL3S
+		MXL3T
+		ND4
+		ND4P
+		ND4S
+		ND4T
+		NR4
+		NR4P
+		NR4S
+		NR4T
+		OA112P
+		OA112T
+		OA12T
+		OA13
+		OA13P
+		OA13T
+		OA222P
+		OA222T
+		OA22T
+		OAI13H
+		OAI13HP
+		OAI13HT
+		OAI222HT
+		OR3B1
+		OR3B1P
+		OR3B1S
+		OR3B1T
+		OR3B2P
+		OR3B2S
+		OR3B2T
+		OR3P
+		OR3S
+		PDI
+		PDIX
+		PUI
+		QDBHN
+		QDBHS
+		QDFFN
+		QDFFP
+		QDFFRBP
+		QDFFRSBN
+		QDFFS
+		QDFZN
+		QDFZP
+		QDFZRBN
+		QDFZRBP
+		QDFZRBS
+		QDFZRBT
+		QDFZRSBN
+		QDFZS
+		QDLHN
+		QDLHP
+		QDLHRBN
+		QDLHRBP
+		QDLHRBS
+		QDLHS
+		QDLHSN
+		RAM2
+		RAM2S
+		RAM3
+		RAM3S
+		RAM5
+		RAM5S
+		XNR3
+		XNR3P
+		XNR3S
+		XNR3T
+		XNR4
+		XNR4P
+		XNR4S
+		XNR4T
+		XOR2HT
+		XOR3
+		XOR3P
+		XOR3S
+		XOR3T
+		XOR4
+		XOR4P
+		XOR4S
+		XOR4T
+		dffsb_pri
+		pulldown_IO
+		pullup2_down_IO
+		pullup_IO
+		pullup_down_IO
+		pullup_down_IO_IEO
+		pullup_down_IO_PSCN
+		pullup_down_ene_IO
+		pullup_down_keep_IO
+		pullup_down_keep_IO_03us
+		pullup_down_keep_IO_IE
+		pullup_down_keep_IO_IG
+		pullup_inv_IO
+		top_tb
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Reading SDF file from location "/home/ic_contest/E64062076/CPU/./syn/top_syn.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     top_syn.sdf.X
+		Log file:              
+		Backannotation scope:  top_tb.TOP
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 64571  Annotated = 94.62% -- No. of Tchecks = 10567  Annotated = 94.42% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	       64571	       61095	       94.62
+		       $hold	        1448	        1407	       97.17
+		     $period	           2	           0	        0.00
+		      $width	        4381	        4221	       96.35
+		   $recovery	        1448	        1407	       97.17
+		  $setuphold	        3288	        2942	       89.48
+  assign Mem_web[3] = \Mem_web[3] ;
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,8945|7): The interconnect source top_tb.TOP.u_CPU.controller.U63.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.idex.U255.I1.  The port annotation will still occur.
+  assign Mem_web[2] = \Mem_web[3] ;
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,8944|7): The interconnect source top_tb.TOP.u_CPU.controller.U63.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.idex.U254.I1.  The port annotation will still occur.
+  assign Mem_web[1] = \Mem_web[3] ;
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,8943|7): The interconnect source top_tb.TOP.u_CPU.controller.U63.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.idex.U253.I1.  The port annotation will still occur.
+  assign N303 = src1[31];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,11391|7): The interconnect source top_tb.TOP.u_CPU.rs1data.U76.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.alu.U53.I.  The port annotation will still occur.
+  assign SUM[1] = A[1];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,13449|7): The interconnect source top_tb.TOP.u_CPU.idex.\EX_pc_reg[1] .Q is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.which_pc.U45.I.  The port annotation will still occur.
+  assign SUM[0] = \A[0] ;
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,13451|7): The interconnect source top_tb.TOP.u_CPU.idex.\EX_pc_reg[0] .Q is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.which_pc.U43.I.  The port annotation will still occur.
+  assign N17 = RS2Addr[1];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1394|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U33.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U38.I1.  The port annotation will still occur.
+  assign N18 = RS2Addr[2];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1395|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U28.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U38.I2.  The port annotation will still occur.
+  assign N18 = RS2Addr[2];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1395|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U28.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U2656.I2.  The port annotation will still occur.
+  assign N16 = RS2Addr[0];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1393|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U30.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U2675.I1.  The port annotation will still occur.
+  assign N17 = RS2Addr[1];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1394|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U33.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U140.I2.  The port annotation will still occur.
+  assign N16 = RS2Addr[0];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1393|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U30.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U926.I.  The port annotation will still occur.
+  assign N17 = RS2Addr[1];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1394|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U33.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U114.I.  The port annotation will still occur.
+  assign N16 = RS2Addr[0];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1393|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U30.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U2654.I1.  The port annotation will still occur.
+  assign N18 = RS2Addr[2];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1395|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U28.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U141.I.  The port annotation will still occur.
+  assign N16 = RS2Addr[0];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1393|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U30.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U2652.I2.  The port annotation will still occur.
+  assign N12 = RS1Addr[1];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1389|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U26.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U39.I1.  The port annotation will still occur.
+  assign N13 = RS1Addr[2];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1390|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U22.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U39.I2.  The port annotation will still occur.
+  assign N13 = RS1Addr[2];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1390|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U22.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U1997.I2.  The port annotation will still occur.
+  assign N11 = RS1Addr[0];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1388|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U25.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U2015.I1.  The port annotation will still occur.
+  assign N12 = RS1Addr[1];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1389|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U26.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U144.I2.  The port annotation will still occur.
+  assign N11 = RS1Addr[0];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1388|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U25.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U927.I.  The port annotation will still occur.
+  assign N12 = RS1Addr[1];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1389|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U26.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U109.I.  The port annotation will still occur.
+  assign N13 = RS1Addr[2];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1390|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U22.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U145.I.  The port annotation will still occur.
+  assign N11 = RS1Addr[0];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1388|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U25.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U1994.I2.  The port annotation will still occur.
+  assign N11 = RS1Addr[0];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1388|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U25.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U960.I.  The port annotation will still occur.
+  assign N12 = RS1Addr[1];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1389|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U26.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U962.I.  The port annotation will still occur.
+  assign N16 = RS2Addr[0];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1393|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U30.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U959.I.  The port annotation will still occur.
+  assign N17 = RS2Addr[1];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1394|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U33.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U961.I.  The port annotation will still occur.
+  assign N15 = RS1Addr[4];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1392|7): The interconnect source top_tb.TOP.u_CPU.U16.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U980.I1.  The port annotation will still occur.
+  assign N20 = RS2Addr[4];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1397|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U1.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U979.I1.  The port annotation will still occur.
+  assign N15 = RS1Addr[4];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1392|7): The interconnect source top_tb.TOP.u_CPU.U16.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U964.I.  The port annotation will still occur.
+  assign N20 = RS2Addr[4];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1397|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U1.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U963.I.  The port annotation will still occur.
+  assign N18 = RS2Addr[2];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1395|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U28.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U958.I1.  The port annotation will still occur.
+  assign N20 = RS2Addr[4];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1397|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U1.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U958.I2.  The port annotation will still occur.
+  assign N19 = RS2Addr[3];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1396|7): The interconnect source top_tb.TOP.u_CPU.U24.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U928.I.  The port annotation will still occur.
+  assign N13 = RS1Addr[2];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1390|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U22.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U956.I1.  The port annotation will still occur.
+  assign N15 = RS1Addr[4];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1392|7): The interconnect source top_tb.TOP.u_CPU.U16.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U956.I2.  The port annotation will still occur.
+  assign N14 = RS1Addr[3];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1391|7): The interconnect source top_tb.TOP.u_CPU.U23.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U929.I.  The port annotation will still occur.
+  assign N13 = RS1Addr[2];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1390|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U22.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U954.I1.  The port annotation will still occur.
+  assign N18 = RS2Addr[2];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1395|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U28.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U953.I1.  The port annotation will still occur.
+  assign N15 = RS1Addr[4];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1392|7): The interconnect source top_tb.TOP.u_CPU.U16.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U270.I2.  The port annotation will still occur.
+  assign N20 = RS2Addr[4];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1397|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U1.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U269.I2.  The port annotation will still occur.
+  assign N11 = RS1Addr[0];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1388|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U25.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U106.I2.  The port annotation will still occur.
+  assign N16 = RS2Addr[0];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1393|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U30.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U111.I2.  The port annotation will still occur.
+  assign N11 = RS1Addr[0];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1388|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U25.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U37.I2.  The port annotation will still occur.
+  assign N16 = RS2Addr[0];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1393|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U30.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U34.I2.  The port annotation will still occur.
+  assign N11 = RS1Addr[0];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,1388|7): The interconnect source top_tb.TOP.u_CPU.instr_stall_mux.U25.O is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.RegFile.U11.I1.  The port annotation will still occur.
+  assign SUM[0] = \A[0] ;
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,13525|7): The interconnect source top_tb.TOP.u_CPU.pc.\pc_out_reg[0] .Q is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.PC_MUX.U92.I1.  The port annotation will still occur.
+  assign SUM[1] = A[1];
+       |
+ncelab: *W,SDFNCAP (../syn/top_syn.v,13523|7): The interconnect source top_tb.TOP.u_CPU.pc.\pc_out_reg[1] .Q is separated by a unidirectional continuous assign from the destination top_tb.TOP.u_CPU.PC_MUX.U67.I2.  The port annotation will still occur.
+    $readmemh({prog_path, "/main0.hex"}, TOP.IM1.i_SRAM.Memory_byte0);
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,42|67): $readmem default memory order incompatible with IEEE1364.
+    $readmemh({prog_path, "/main0.hex"}, TOP.DM1.i_SRAM.Memory_byte0); 
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,43|67): $readmem default memory order incompatible with IEEE1364.
+    $readmemh({prog_path, "/main1.hex"}, TOP.IM1.i_SRAM.Memory_byte1);
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,44|67): $readmem default memory order incompatible with IEEE1364.
+    $readmemh({prog_path, "/main1.hex"}, TOP.DM1.i_SRAM.Memory_byte1); 
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,45|67): $readmem default memory order incompatible with IEEE1364.
+    $readmemh({prog_path, "/main2.hex"}, TOP.IM1.i_SRAM.Memory_byte2);
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,46|67): $readmem default memory order incompatible with IEEE1364.
+    $readmemh({prog_path, "/main2.hex"}, TOP.DM1.i_SRAM.Memory_byte2); 
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,47|67): $readmem default memory order incompatible with IEEE1364.
+    $readmemh({prog_path, "/main3.hex"}, TOP.IM1.i_SRAM.Memory_byte3);
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,48|67): $readmem default memory order incompatible with IEEE1364.
+    $readmemh({prog_path, "/main3.hex"}, TOP.DM1.i_SRAM.Memory_byte3); 
+                                                                   |
+ncelab: *W,MEMODR (../sim/top_tb.sv,49|67): $readmem default memory order incompatible with IEEE1364.
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                     Instances  Unique
+		Modules:                  9327     430
+		UDPs:                     1889      11
+		Primitives:              16816      14
+		Timing outputs:           9508     299
+		Registers:                1978     323
+		Scalar wires:            11084       -
+		Expanded wires:             64       2
+		Named events:               47      42
+		Always blocks:             113     104
+		Initial blocks:              9       7
+		Cont. assignments:          12      56
+		Timing checks:           13855    1528
+		Interconnect:            25200       -
+		Delayed tcheck signals:   4459    1614
+		Simulation timescale:      1ps
+	Writing initial simulation snapshot: worklib.AN2B1P:lib
+Loading snapshot worklib.AN2B1P:lib .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'top.fsdb'
+*Verdi* : Begin traversing the scope (top_tb.TOP), layer (0).
+*Verdi* : Enable +struct and +mda dumping.
+*Verdi* : End of traversing.
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& con_A:5 NS, negedge A0:4426 PS,  108.3 : 1083 PS,  10.0 : 100 PS );
+            File: ../sim/SRAM/SRAM.v, line = 1152
+           Scope: top_tb.TOP.IM1.i_SRAM
+            Time: 5 NS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& con_A:5 NS, negedge A1:4586 PS,  112.3 : 1123 PS,  10.0 : 100 PS );
+            File: ../sim/SRAM/SRAM.v, line = 1154
+           Scope: top_tb.TOP.IM1.i_SRAM
+            Time: 5 NS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& con_A:5 NS, negedge A0:4149 PS,  95.0 : 950 PS,  10.0 : 100 PS );
+            File: ../sim/SRAM/SRAM.v, line = 1152
+           Scope: top_tb.TOP.DM1.i_SRAM
+            Time: 5 NS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& con_A:5 NS, negedge A1:4149 PS,  95.0 : 950 PS,  10.0 : 100 PS );
+            File: ../sim/SRAM/SRAM.v, line = 1154
+           Scope: top_tb.TOP.DM1.i_SRAM
+            Time: 5 NS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& con_A:5 NS, negedge A2:4149 PS,  95.0 : 950 PS,  10.0 : 100 PS );
+            File: ../sim/SRAM/SRAM.v, line = 1156
+           Scope: top_tb.TOP.DM1.i_SRAM
+            Time: 5 NS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& con_A:5 NS, negedge A3:4150 PS,  95.1 : 951 PS,  10.0 : 100 PS );
+            File: ../sim/SRAM/SRAM.v, line = 1158
+           Scope: top_tb.TOP.DM1.i_SRAM
+            Time: 5 NS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& con_A:5 NS, negedge A4:4150 PS,  95.1 : 951 PS,  10.0 : 100 PS );
+            File: ../sim/SRAM/SRAM.v, line = 1160
+           Scope: top_tb.TOP.DM1.i_SRAM
+            Time: 5 NS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& con_A:5 NS, negedge A5:4150 PS,  95.1 : 951 PS,  10.0 : 100 PS );
+            File: ../sim/SRAM/SRAM.v, line = 1162
+           Scope: top_tb.TOP.DM1.i_SRAM
+            Time: 5 NS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& con_A:5 NS, negedge A6:4150 PS,  95.1 : 951 PS,  10.0 : 100 PS );
+            File: ../sim/SRAM/SRAM.v, line = 1164
+           Scope: top_tb.TOP.DM1.i_SRAM
+            Time: 5 NS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& con_A:5 NS, negedge A7:4150 PS,  95.1 : 951 PS,  10.0 : 100 PS );
+            File: ../sim/SRAM/SRAM.v, line = 1166
+           Scope: top_tb.TOP.DM1.i_SRAM
+            Time: 5 NS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& con_A:5 NS, negedge A8:4150 PS,  95.1 : 951 PS,  10.0 : 100 PS );
+            File: ../sim/SRAM/SRAM.v, line = 1168
+           Scope: top_tb.TOP.DM1.i_SRAM
+            Time: 5 NS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& con_A:5 NS, negedge A9:4150 PS,  95.1 : 951 PS,  10.0 : 100 PS );
+            File: ../sim/SRAM/SRAM.v, line = 1170
+           Scope: top_tb.TOP.DM1.i_SRAM
+            Time: 5 NS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& con_A:5 NS, negedge A10:4150 PS,  95.1 : 951 PS,  10.0 : 100 PS );
+            File: ../sim/SRAM/SRAM.v, line = 1172
+           Scope: top_tb.TOP.DM1.i_SRAM
+            Time: 5 NS
+
+
+Warning!  Timing violation
+           $setuphold<setup>( posedge CK &&& con_WEB0:5 NS, posedge WEB0:4809 PS,  57.8 : 578 PS,  10.0 : 100 PS );
+            File: ../sim/SRAM/SRAM.v, line = 1243
+           Scope: top_tb.TOP.DM1.i_SRAM
+            Time: 5 NS
+
+
+Done
+
+DM[8192] = fffffff0, pass
+DM[8193] = fffffff8, pass
+DM[8194] = 00000008, pass
+DM[8195] = 00000001, pass
+DM[8196] = 00000001, pass
+DM[8197] = 78787878, pass
+DM[8198] = 000091a2, pass
+DM[8199] = 00000003, pass
+DM[8200] = fefcfefd, pass
+DM[8201] = 10305070, pass
+DM[8202] = cccccccc, pass
+DM[8203] = ffffffcc, pass
+DM[8204] = cccccccc, pass
+DM[8205] = ffffffcc, pass
+DM[8206] = cccccccc, pass
+DM[8207] = 00000d9d, pass
+DM[8208] = 00000004, pass
+DM[8209] = 00000003, pass
+DM[8210] = 000001a6, pass
+DM[8211] = 00000ec6, pass
+DM[8212] = 2468b7a8, pass
+DM[8213] = 5dbf9f00, pass
+DM[8214] = 00012b38, pass
+DM[8215] = fa2817b7, pass
+DM[8216] = ff000000, pass
+DM[8217] = 12345678, pass
+DM[8218] = 0000f000, pass
+DM[8219] = 00000f00, pass
+DM[8220] = 000000f0, pass
+DM[8221] = 0000000f, pass
+DM[8222] = 12345678, pass
+DM[8223] = 78000000, pass
+DM[8224] = 12345678, pass
+DM[8225] = 00000078, pass
+DM[8226] = 12345678, pass
+DM[8227] = 8a345678, pass
+DM[8228] = fffff000, pass
+DM[8229] = fffff000, pass
+DM[8230] = fffff000, pass
+DM[8231] = fffff000, pass
+DM[8232] = fffff000, pass
+DM[8233] = fffff000, pass
+DM[8234] = 1357a070, pass
+DM[8235] = 13578000, pass
+DM[8236] = fffff004, pass
+
+
+
+
+        ****************************               
+        **                        **       |__||  
+        **  Congratulations !!    **      / O.O  | 
+        **                        **    /_____   | 
+        **  Simulation PASS!!     **   /^ ^ ^ \  |
+        **                        **  |^ ^ ^ ^ |w| 
+        ****************************   \m___m__|_|
+
+
+Simulation complete via $finish(1) at time 73025 NS + 1
+../sim/top_tb.sv:76     $finish;
+ncsim> exit
+TOOL:	irun	15.20-s039: Exiting on Aug 26, 2022 at 16:35:04 CST  (total: 00:00:12)
